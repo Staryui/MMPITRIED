@@ -52,8 +52,7 @@ float: right;
 
 #footer {clear: both;
 height: 30px;
-background-image: url("banner.png");
-background-repeat: no-repeat;
+background color: lightblue;
 text-align: right;
 padding-right: 10px;
 color: white;
