@@ -7,20 +7,45 @@ function setup() {
 function draw() {
 	background(28);
 	
+//ears
     var earsize = 55;
-    var earx = 255;
-    var eary = 189;
-    
+     var earx = 255;
+     var eary = 189;
+//head
     var headsize = 145; 
-    var heady = 180;
-    var headx = 320;
-    
-    
+     var headx = 320;
+     var heady = 180;
+//lids
+   var lidy = 170
+    var lidang = 40
+    var lidleft = 370
+    var lidright = 280
+//arc
+    var arcc = 60
+    var arcd = 23
+    var arcs = 0
+//mouth
+    var mouthx = 310
+    var mouthy = 230
+    var mouthang = 30
+//eyes  
+   var eyesy = 178 
+   var eyesize = 25
+   var eyeleft = 285
+   var eyeright = 375
+   
+    fill("lightcyan");
     ellipse(earx, eary, earsize); //ear
-	ellipse(headx, heady, headsize); //head
-    arc(370, 170, 40, 23, 60, 0) //lid right
-    arc(280, 170, 40, 23, 60, 0); //lid left
-    ellipse(285, 178, 25) //eye left
-    ellipse(375, 178, 25) //eye right
-         arc(310, 230, 30, 23, 60, 0) //mouth 
+	
+    noStroke();
+    ellipse(headx, heady, headsize); //head
+   
+    stroke("steelblue")
+    arc(lidleft, lidy, lidang, arcd, arcc, arcs) //lid right
+    arc(lidright, lidy, lidang, arcd, arcc, arcs); //lid left
+   fill("powderblue")
+    ellipse(eyeleft, eyesy, eyesize) //eye left
+    ellipse(eyeright, eyesy, eyesize) //eye right
+    noFill();     
+         arc(mouthx, mouthy, mouthang, arcd, arcc, arcs) //mouth 
 }
