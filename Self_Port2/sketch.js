@@ -8,7 +8,7 @@ function draw() {
 	background(28);
 	
 //ears
-    var earsize = 55;
+    var earsize = 50;
      var earx = 255;
      var eary = 189;
 //head
@@ -33,22 +33,19 @@ function draw() {
    var eyesize = 25
    var eyeleft = 285
    var eyeright = 375
-   
-//Trying to make the eyes change 
-   
-   
-   
-    fill("lightcyan");
+//colors 
+ 
+ fill("lightcyan");
     ellipse(earx, eary, earsize); //ear
-	
+    
     noStroke();
     ellipse(headx, heady, headsize); //head
    
-    stroke("steelblue")
+stroke("steelblue")
     noFill();
     arc(lidleft, lidy, lidang, arcd, arcc, arcs) //lid right
     arc(lidright, lidy, lidang, arcd, arcc, arcs); //lid left
-   fill("powderblue")
+fill("powderblue")
     ellipse(eyeleft, eyesy, eyesize) //eye left
     ellipse(eyeright, eyesy, eyesize) //eye right
     noFill();     
