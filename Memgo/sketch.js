@@ -5,8 +5,8 @@ function preload() {
 	img = loadImage("Kermit.jpeg");}
 
 function setup() {
-	createCanvas(640, 640);
-	text("I should do HomeWork, Also me watch YouTube", 20, 20);
+	createCanvas(940, 940);
+	//text("I should do HomeWork, Also me watch YouTube", 20, 20);
 }
 var img;
 function draw() {
